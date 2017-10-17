@@ -26,17 +26,15 @@
 
 </head>
 
-<body style="height:2000px">
+<body>
 
     <div id="header" class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 d-none d-md-block">          	
-                    <div class="d-inline-block">
-                        <center>
-                            <h1 class = "logo"><b>Office Repair</b></h1>                        
-                            <span class="text-secondary" style="margin-bottom: 0px">Быстрый и качественный ремонт офисов в Киеве</span>
-                        </center>
+                    <div class="d-inline-block" style="text-align: center">
+                            <h1 class = "logo">Office Renew</h1>                    
+                            <span class="text-secondary" style="margin-top: 0px; font-size: 0.9375rem">Быстрый и качественный ремонт офисов в Киеве</span>
                     </div>
                 </div>
 				<div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-center justify-content-end">
@@ -48,7 +46,10 @@
 
     <nav id="navigation" class="navbar navbar-expand-md sticky-top navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand mr-auto d-md-none logo" href="#">Office Repair</a>
+            <div class="d-none d-md-block">
+                <a id="navbarLogo" class="navbar-brand mr-auto logo" href="#header">Office Renew</a>
+            </div>
+            <a class="navbar-brand d-md-none mr-auto logo" href="#header">Office Renew</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,19 +57,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
+                        <a class="nav-link" href="#services">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Примеры работ</a>
+                        <a class="nav-link" href="#showcase">Примеры работ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Прайс-лист</a>
+                        <a class="nav-link" href="#price">Прайс-лист</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Рассчет стоимости</a>
+                        <a class="nav-link" href="#calcualtor">Рассчет стоимости</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Оставить заявку</a>
+                        <a class="nav-link" href="#contact">Оставить заявку</a>
                     </li>
                 </ul>
             </div>
@@ -99,6 +100,30 @@
                 </a>
             </div>
         </div>
+    </div>
+  
+    <div data-spy="scroll" data-target="#navbarNav" data-offset="0">
+
+    <div id ="services" class="container" style="height: 600px">
+
+    </div>
+            
+    <div id ="showcase" class="container" style="height: 600px">
+
+    </div>
+
+    <div id ="price" class="container" style="height: 600px">
+
+    </div>
+
+    <div id ="calculator" class="container" style="height: 600px">
+
+    </div>
+
+    <div id ="contact" class="container" style="height: 600px">
+
+    </div>
+
     </div>
 
     <link rel="stylesheet" href="css/style.min.css">
