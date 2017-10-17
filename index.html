@@ -28,7 +28,7 @@
 
 <body>
 
-    <div id="header" class="jumbotron jumbotron-fluid bg-light">
+    <div id="top" class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 d-none d-md-block">          	
@@ -47,10 +47,10 @@
     <nav id="navigation" class="navbar navbar-expand-md sticky-top navbar-light bg-light">
         <div class="container">
             <div class="d-none d-md-block">
-                <a id="navbarLogo" class="navbar-brand mr-auto logo" href="#header">Office Repair</a>
+                <a id="navbarLogo" class="navbar-brand mr-auto logo" href="#top">Office Repair</a>
             </div>
-            <a class="navbar-brand d-md-none mr-auto logo" href="#header">Office Repair</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-md-none mr-auto logo" href="#top">Office Repair</a>
+            <button class="navbar-toggler" type="button" onclick="this.blur();" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -66,7 +66,7 @@
                         <a class="nav-link" href="#price">Прайс-лист</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#calcualtor">Рассчет стоимости</a>
+                        <a class="nav-link" href="#calculator">Рассчет стоимости</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Оставить заявку</a>
@@ -101,33 +101,32 @@
             </div>
         </div>
     </div>
-  
-    <div data-spy="scroll" data-target="#navbarNav" data-offset="0">
 
-    <div id ="services" class="container" style="height: 600px">
+    <div id ="services" class="section container" style="height: 600px">
 
     </div>
             
-    <div id ="showcase" class="container" style="height: 600px">
+    <div id ="showcase" class="section container" style="height: 600px">
 
     </div>
 
-    <div id ="price" class="container" style="height: 600px">
+    <div id ="price" class="section container" style="height: 600px">
 
     </div>
 
-    <div id ="calculator" class="container" style="height: 600px">
+    <div id ="calculator" class="section container" style="height: 600px">
 
     </div>
 
-    <div id ="contact" class="container" style="height: 600px">
-
-    </div>
+    <div id ="contact" class="section container" style="height: 800px">
 
     </div>
 
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/scripts.min.js"></script>
+    <!-- <script src="js/scripts.min.js"></script> -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>   
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/common.min.js"></script> 
 
 </body>
 
