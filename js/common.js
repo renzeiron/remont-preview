@@ -1,20 +1,22 @@
 $(document).ready(function() {
-	$(document).scroll(function () {
-		var y = $(this).scrollTop();
-		if (y > 300) {
-			$('#navbarLogo').fadeIn();
-		} else {
-			$('#navbarLogo').fadeOut();
-		}
-	});
+	// $(document).scroll(function () {
+	// 	var y = $(this).scrollTop();
+	// 	if (y > 300) {
+	// 		$('#navbarLogo').fadeIn();
+	// 	} else {
+	// 		$('#navbarLogo').fadeOut();
+	// 	}
+	// });
 
-	$('#navigation .navbar-nav li>a').click(function() {
+	$('#navigation .navbar-nav li>a').click(function(e) {
+		e.preventDefault(); 
 		var link = $(this).attr('href');
 		var pos = $(link).offset().top;
 		$('body,html').animate({ scrollTop: pos }, 700);
 	});
 
-	$('#navigation .navbar-brand').click(function() {
+	$('#navigation .navbar-brand').click(function(e) {
+		e.preventDefault();
 		var link = $(this).attr('href');
 		var pos = $(link).offset().top;
 		$('body,html').animate({ scrollTop: pos }, 700);
@@ -25,6 +27,12 @@ $(document).ready(function() {
 	$(window).on('scroll', function () {
     	var pos = $(this).scrollTop();
 		
+		if (pos >= 300) {
+			$('#navbarLogo').fadeIn();
+		} else {
+			$('#navbarLogo').fadeOut();
+		}
+
       	sections.each(function () {
         	var top = $(this).offset().top,
 			bottom = top + $(this).outerHeight();
