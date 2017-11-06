@@ -79,5 +79,13 @@ $(document).ready(function() {
 			}
       	});
 	});
-	
+
+	$('#privacy-link').on('click', function() {
+		$('#privacy-policy').modal('show');
+	});
+
+	$('#req-link').on('click', function() {
+		$('#requisites').modal('show');
+	});
+
 });
