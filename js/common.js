@@ -59,9 +59,9 @@ $(document).ready(function() {
 	nav = $('.navbar-nav');
 
 	$(window).on('scroll', function () {
-    	var pos = $(this).scrollTop();
+    	var pos = $(this).scrollTop() + $('#navigation').outerHeight();
 		
-		if (pos >= 300) {
+		if (pos >= /*300*/ $('#top').outerHeight()) {
 			$('#navbarLogo').fadeIn();
 		} else {
 			$('#navbarLogo').fadeOut();
