@@ -4,14 +4,22 @@ $(document).ready(function() {
 		e.preventDefault(); 
 		var link = $(this).attr('href');
 		var pos = $(link).offset().top;
-		$('body,html').animate({ scrollTop: pos }, 700);
+		$('body, html').animate({ scrollTop: pos }, 700);
 	});
 
 	$('#navigation .navbar-brand').click(function(e) {
 		e.preventDefault();
 		var link = $(this).attr('href');
 		var pos = $(link).offset().top;
-		$('body,html').animate({ scrollTop: pos }, 700);
+		$('body, html').animate({ scrollTop: pos }, 700);
+	});
+
+	$('#services a').click(function(e) {
+		e.preventDefault();
+		var link = $(this).attr('href');
+		$(link).addClass('show');
+		var pos = $(link).offset().top;
+		$('body, html').animate({ scrollTop: pos - $('#top').outerHeight() }, 700);
 	});
 
 	$('a').click(function(e) {
