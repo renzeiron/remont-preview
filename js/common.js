@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
 	$('#navigation .navbar-nav li > a').click(function(e) {
+		$('.navbar-collapse').collapse('hide');
 		e.preventDefault(); 
 		var link = $(this).attr('href');
-		var pos = $(link).offset().top;
-		$('body, html').animate({ scrollTop: pos }, 700);
+		// var pos = $(link).offset().top + $('#navbarLogo').outerHeight();
+		var pos = $(link).offset().top + $('#navbarLogo').outerHeight();
+		//$('body, html').animate({ scrollTop: pos - $('#navigation').outerHeight() }, 700);
+		$('body, html').animate({ scrollTop: pos - $('.navbar-collapse').outerHeight() }, 700);
 	});
 
 	$('#navigation .navbar-brand').click(function(e) {
@@ -19,7 +22,7 @@ $(document).ready(function() {
 		var link = $(this).attr('href');
 		$(link).addClass('show');
 		var pos = $(link).offset().top;
-		$('body, html').animate({ scrollTop: pos - $('#top').outerHeight() }, 700);
+		$('body, html').animate({ scrollTop: pos - $('#navigation').outerHeight() }, 700);
 	});
 
 	$('a').click(function(e) {
