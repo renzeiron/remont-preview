@@ -29,25 +29,34 @@
 <body>
 
     <!-- <div id="top" class="jumbotron jumbotron-fluid" style="background: #F5F0F6"> -->
-    <div id="top" class="jumbotron jumbotron-fluid" style="background: #D5D5D5">
+    <div id="top" class="jumbotron jumbotron-fluid">
         <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 d-none d-md-block">          	
                     <div class="d-inline-block text-center" style="line-height: 0rem">
                             <h1 class="logo">Office Repair</h1>                    
-                            <span style="color: #605B56">Быстрый и качественный ремонт офисов в Киеве</span>
+                            <span>Быстрый и качественный ремонт офисов в Киеве</span>
                     </div>
                 </div>
-				<div class="col-lg-4 col-md-4 col-sm-12 align-self-center text-left">
+				<!-- <div class="col-lg-4 col-md-4 col-sm-12 align-self-center text-left">
                     <h5 class="text-md-right my-auto"><i class="fa fa-phone" aria-hidden="true"></i> (044) 360-85-38</h5>
                     <h5 class="text-md-right my-auto"><i class="fa fa-phone" aria-hidden="true"></i> (044) 240-23-83</h5>              
+                </div> -->
+                <div class="col-lg-4 col-md-4 col-sm-12 align-self-center">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-4 col-6 pl-0">
+                            <h5 class="text-md-right my-auto"><i class="fa fa-phone" aria-hidden="true"></i> (044) 360-85-38</h5>
+                        </div>
+                        <div class="col-md-12 col-sm-4 col-6 pl-0">
+                            <h5 class="text-md-right my-auto"><i class="fa fa-phone" aria-hidden="true"></i> (044) 240-23-83</h5>  
+                        </div> 
+                    </div>          
                 </div>
 			</div>
 		</div>
     </div>
 
-    <!-- <nav id="navigation" class="navbar navbar-expand-lg sticky-top navbar-light" style="background: #F5F0F6"> -->
-    <nav id="navigation" class="navbar navbar-expand-lg sticky-top navbar-light" style="background: #D5D5D5">
+    <nav id="navigation" class="navbar navbar-expand-lg sticky-top navbar-light">
         <div class="container">
             <div class="d-none d-md-block">
                 <a id="navbarLogo" class="navbar-brand mr-auto logo" href="#top">Office Repair</a>
@@ -82,8 +91,7 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid mb-0" style="background: #293744">
-    <!-- <div class="jumbotron jumbotron-fluid" style="background: #70877F"> -->
+    <div class="jumbotron jumbotron-fluid mb-0" style="background: #3F556B">
     <!-- <div class="jumbotron jumbotron-fluid"> -->
         <div class="container">
             <div id="carouselExampleControls" class="carousel slide" data-interval="3000" data-ride="carousel">
@@ -139,7 +147,7 @@
 
             <div class="d-none d-md-block col-md-2 text-center">
                 <span class="section-icon">
-                    <i class="fa fa-info" aria-hidden="true"></i>
+                    <!-- <i class="fa fa-info" aria-hidden="true"></i> -->
                 </span>
             </div>
 
@@ -157,9 +165,6 @@
                         <p class="lead"> 
                             Специалисты компании Office Repair, выполняя ремонт офиса, будут учитывать не только внешнюю привлекательность помещения, но и заботиться о комфорте работающих там людей.  
                         </p>
-                        <!-- <p>
-                            Мы профессионалы не только на словах, это подтверждено международными сертификатами: 
-                        </p> -->
                     </div>
                 </div>
 
@@ -196,8 +201,6 @@
     </div>
 
     </div>
-
-    <div class="gradient">
 
     <div id ="services" class="section container">
 
@@ -562,7 +565,7 @@
                 </p>
 
                 <div id="accordion" role="tablist">
-                    <div class="card rounded-0">
+                    <div class="card" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                         <div class="card-header" role="tab" id="heading1">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
@@ -1179,7 +1182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card rounded-0">
+                    <div class="card" style="border-top-left-radius: 0; border-top-right-radius: 0;">
                         <div class="card-header" role="tab" id="heading9">
                             <h5 class="mb-0">
                                 <a class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
@@ -1269,7 +1272,7 @@
             
             <div class="col-sm-12 col-md-10">
                 <div id="calc-accordion" role="tablist">
-                    <div class="card rounded-0">
+                    <div class="card">
                         <div class="card-header" role="tab" id="calc-heading">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#calc-collapse" aria-expanded="true" aria-controls="calc-collapse">
@@ -1649,7 +1652,7 @@
                                         <span id="total" class="h5">Итого: 0 грн.</span>
                                     </div>
                                     <div class="col-12 col-sm-6">
-                                        <button id="calculate" type="button" class="btn btn-secondary btn-lg btn-block rounded-0">Рассчитать</button>
+                                        <button id="calculate" type="button" class="btn btn-bittersweet btn-lg btn-block">Рассчитать</button>
                                     </div>
                                 </div> 
 
@@ -1685,24 +1688,24 @@
                     
                     <div id="needs-validation" class="col-md-6 mb-3">
                         <div class="input-group mb-3">
-                            <span class="input-group-addon rounded-0" id="sizing-addon1">
+                            <span class="input-group-addon" id="addon1">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1" aria-required="true" placeholder="ФИО" required="required">
+                            <input type="text" class="form-control rounded-right" aria-describedby="addon1" aria-required="true" placeholder="ФИО" required="required">
                             <span class="required" />
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-addon rounded-0" id="sizing-addon1">
+                            <span class="input-group-addon" id="addon2">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </span>
-                            <input type="tel" class="form-control" aria-describedby="sizing-addon1" aria-required="true" pattern="^[0-9]{10}$" placeholder="Телефон" required="required">
+                            <input type="tel" class="form-control rounded-right" aria-describedby="addon2" aria-required="true" pattern="^[0-9]{10}$" placeholder="Телефон" required="required">
                             <span class="required" />
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-addon rounded-0 text-center" id="sizing-addon1">
+                            <span class="input-group-addon text-center" id="addon3">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </span>
-                            <input type="email" class="form-control" aria-describedby="sizing-addon1" aria-required="true" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" placeholder="E-mail" required="required">
+                            <input type="email" class="form-control rounded-right" aria-describedby="addon3" aria-required="true" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" placeholder="E-mail" required="required">
                             <span class="required" />
                         </div>
                         <span><small>Поля отмеченные * обязательны для заполнения.</small></span>
@@ -1710,9 +1713,9 @@
                     
                     <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <textarea name="" id="" cols="80" rows="8" class="form-control rounded-0" placeholder="Дополнительная информация" style="resize: none;"></textarea>                            
+                            <textarea name="" id="" cols="80" rows="8" class="form-control" placeholder="Дополнительная информация" style="resize: none;"></textarea>                            
                         </div>
-                        <button type="submit" id="submit-form" class="btn btn-secondary btn-lg btn-block rounded-0">Отправить</button>
+                        <button type="submit" id="submit-form" class="btn btn-bittersweet btn-lg btn-block">Отправить</button>
                     </div>
 
                 </div>
@@ -1720,7 +1723,6 @@
 
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer id="footer">
@@ -1734,7 +1736,6 @@
                     <h5>Информация</h5>
                     <ul>
                         <li><a id="privacy-link" href="#">Политика конфиденциальности</a></li>
-                        <!-- <li><a id="req-link" href="#">Реквизиты</a></li> -->
 
                         <!-- Modals -->
 
@@ -1782,26 +1783,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="modal fade" tabindex="-1" id="requisites" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Реквизиты</h5>
-                                        <button type="button" class="close" onclick="" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                            
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -1824,8 +1805,6 @@
         </div>
 
     </footer>
-
-    </div>
 
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/scripts.min.js"></script>
